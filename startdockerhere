@@ -1,0 +1,1 @@
+dirname=${PWD##*/} ; docker run --rm --net="host" -it --entrypoint=/bin/bash -v `pwd`:/${dirname} -w /${dirname} "$@" 
